@@ -1,0 +1,31 @@
+
+<form method="POST" action="/{{user.userID}}">
+    <div class = "container">
+      <h2>myAccount</h2>
+        <div class="form-group">
+          <label for="exampleInputUsername1">Username</label>
+          <input type="text" class="form-control" id="exampleInputText1" name="username" value={{user.username}}>
+          <div class="invalid-feedback">
+            Please enter username.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email Address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value={{user.email}}>
+          <div class="invalid-feedback">
+            Please enter email.
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputPhonenumber3">Phone Number</label>
+          <input type="text" class="form-control" id="exampleInputText3" name="phone" value={{user.phone}}>
+          <div class="invalid-feedback">
+            Please enter phone number.
+          </div>
+          <label></label>
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+      </form>
